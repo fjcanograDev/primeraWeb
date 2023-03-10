@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos contacto</title>
+</head>
+<body>
+    <h1>Datos de contacto </h1>
+    <p>Nombre Apellidos</p>
+    <p>email</p>
+    <p>teléfono</p>
+    <hr>
+    <!-- cuando le damos a enviar, le mando un email a fjcanogra@gmail-->
+    <form action="mailto:fjcanogra@gmail" method="post"> 
+        <!-- for -> para hace referencia al campo id de la etiqueta input -->
+        <label for="nombre">Nombre</label>
+        <!-- id identificador como nuestro DNI-->
+        <!-- name nombre del campo-->
+        <!-- type tipo de campo-->
+        <input type="text" id="nombre" name="nombre" value="Valor por defecto">
+        <label for="asunto">asunto</label>
+        <select id="asunto" name="asunto">
+                <option value="consulta">consulta</option>
+                <option value="contratar">contratar</option>
+                <option value="queja">queja</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
+    <hr>
+    <h3><a href="index.html">Inicio</a></h3>
+</body>
+</html>
